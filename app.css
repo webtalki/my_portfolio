@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.bdy {
+    max-width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* border: 2px solid red; */
+    background-color: #020826;
+    color: white;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #020826;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Navbar styles */
+.logo_text {
+    color: #020826;
+    padding-left: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.nav_container {
+
+
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid slategray;
+    background-color: rgb(103, 151, 146);
+    position: relative;
+    padding: 1.5% 0;
+    gap: 16%;
+
+
+
+    /* border: 2px solid orangered; */
+}
+
+ul,
+li {
+
+    list-style: none;
+    display: inline;
+    color: #020826;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.nav_links,
+ul {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-left:80px; */
+    color: aquamarine;
+
+
+}
+
+
+
+.header_img,
+img {
+
+    height: auto;
+    width: 70%;
+
+}
+
+.head_h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.bold {
+    color: aquamarine;
+}
+
+.header_container {
+    margin-top: 1%;
+    max-width: 100%;
+    /* border: 2px solid slategray; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 30px;
+    align-items: center;
+}
+
+.btn_resume,
+button {
+    width: 20%;
+    background-color: aquamarine;
+    color: #020826;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5%;
+    padding-right: 10%;
+}
+
+
+
+.proj_para {
+    margin-top: 5%;
+}
+
+.skils {
+    border: 0.5px solid silver;
+}
+
+.skils,
+a {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 2px dotted bisque; */
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.about_container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 10%;
+    padding-left: 3%;
+    margin-top: 10%;
+    /* border: 0.5px solid white ; */
+    align-items: center;
+
+}
+
+.img_about {
+    width: 50%;
+    height: auto;
+    /* border: 2px solid yellow; */
+}
+
+.img_ab {
+    width: 70%;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 15%;
+    opacity: 70%;
+
+}
+
+.about_text {
+    width: 50%;
+    padding: 10% 0;
+    ;
+    /* border: 2px solid blue; */
+}
+
+.abt_h1 {
+    color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.abt_p {
+    padding: 6% 0;
+
+}
+
+
+.abt_p {
+    line-height: 1.6;
+}
+
+.proj_h1 {
+    margin-top: 10%;
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.img_proj {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    /* border: 2px solid red; */
+    align-items: center;
+
+
+}
+
+.proj_box1 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 40%;
+    border-radius: 3%;
+    background-color: rgb(109, 148, 144);
+    /* border: 2px solid white; */
+    color: white;
+    padding: 4% 0;
+    font-weight: 600;
+}
+
+.proj_img {
+    align-self: center;
+
+}
+
+.proj_para {
+    padding-left: 15%;
+
+}
+
+.proj_para__mini {
+    padding-left: 15%;
+    padding-top: 3%;
+}
+
+.proj_skils {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-top: 3%;
+    font-size: 1.2em;
+    gap: 30%;
+
+}
+
+.footer_section {
+    text-align: center;
+    background-color: rgb(103, 151, 146);
+    padding: 0.4% 0;
+    margin-top: 10%;
+}
+
+.Copyright {
+    color: #020826;
+    padding: 2%;
+}
+
+/* Responsive styles For Nav Links */
+@media screen and (max-width: 768px) {
+    .nav_container {
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 0;
+    }
+
+    .nav_links {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: rgb(103, 151, 146);
+        margin-top: 10px;
+        order: 3;
+        /* Ensure menu appears after logo and hamburger */
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+
+    .nav_links ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav_links ul a li {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        align-self: center;
+        /* Align hamburger in the center vertically */
+    }
+
+    .logo_text {
+        padding-left: 0;
+    }
+
+    .bdy {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .bdy {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .nav_container {
+        gap: 5%;
+    }
+}
+
+/* Responsive styles for header section */
+@media screen and (max-width: 768px) {
+    .header_container {
+        flex-direction: column;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .header_img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header_img img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .head_text {
+        width: 100%;
+    }
+
+    .btn_resume,
+    button {
+
+        width: 30%;
+        margin: 0 auto;
+        padding-right: 10%;
+
+
+    }
+
+    .head_para {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header_container {
+        padding: 30px 20px;
+    }
+
+    .header_img img {
+        width: 80%;
+    }
+
+    .btn_resume,
+    button {
+        width: 30%;
+        padding: 0.8%;
+    }
+}
+
+/* Responsive styles for About Section */
+@media screen and (max-width: 768px) {
+    .about_container {
+        flex-direction: column;
+        padding: 5% 3%;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .img_about {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .img_ab {
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 20%;
+    }
+
+    .about_text {
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    .abt_p {
+        padding: 4% 0;
+        line-height: 1.6;
+        word-break: break-word;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about_container {
+        padding: 5% 5%;
+        margin-top: 8%;
+    }
+
+    .img_about {
+        width: 45%;
+    }
+
+    .img_ab {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .about_text {
+        width: 55%;
+        padding: 5% 0;
+    }
+
+    .abt_p {
+        line-height: 1.6;
+    }
+}
+
+/* Responsive styles for Project Section */
+@media screen and (max-width: 768px) {
+    .img_proj {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .proj_box1 {
+        width: 90%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .proj_para,
+    .proj_para__mini {
+        padding-left: 0;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .proj_skils {
+        width: 50%;
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .img_proj {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .proj_box1 {
+        width: 45%;
+    }
+
+    .proj_para,
+    .proj_para__mini {
+        padding-left: 10%;
+    }
+
+    .proj_skils {
+        width: 40%;
+        padding-left: 10%;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Keerthi-portfolio</title>
+</head>
+
+<body>
+
+    <!-- body_resize -->
+    <div class="bdy">
+        <!-- navbar -->
+        <div class="nav_container">
+            <div>
+                <h1 class="logo_text">Keerthi_Portfolio</h1>
+            </div>
+            <div class="nav_links">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About Me</li>
+                    </a>
+                    <!-- <li>Contact Me</li> -->
+                    <a href="#">
+                        <li>Projects</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- header section -->
+
+
+        <div class="header_container">
+
+            <div class="header_img">
+                <img src="images/keerthi_pro-modified.png" alt="">
+            </div>
+
+            <div class="head_text">
+                <div class="head_h3">
+                    <h3>Hello,I am Keerthi Kumar</h3>
+                </div>
+                <br>
+                <div class="bold">
+                    <h2>A Front-End Developer & UI/UX Designer</h2>
+                </div>
+                <br>
+                <div>
+                    <p class="head_para">from intutive UX/UI design to powerful full-stack development,we create
+                        user-centered,high-performing digital proucts that engage,inspire,and deliver result.</p>
+                </div>
+                <br>
+                <div class="btn_resume">
+                    <a href="assets/resume_ke.pdf" download="resume_ke.pdf"><button>Resume</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Skils Section -->
+
+        <div class="skils">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">FIGMA</a>
+        </div>
+
+        <!-- About Section -->
+        <div class="about_container">
+            <div class="img_about">
+                <img class="img_ab" src="images/keerthi_pro_about.png" alt="">
+            </div>
+            <div class="about_text">
+                <h1 class="abt_h1">About Me</h1>
+                <div class="about_para">
+                    <p class="abt_p">Frontend and UI-focused learner with hands-on Figma projects and a foundation in
+                        HTML, CSS, and JavaScript. Background in manufacturing and customer support, Bringing strong
+                        discipline, communication, and problem-solving skills into IT.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- project section -->
+        <div class="project_header">
+            <h2 class="proj_h1">Projects I Have Worked On</h2>
+        </div>
+        <!-- <div class="project_container"> -->
+
+        <div class="img_proj">
+            <div class="proj_box1">
+                <img class="proj_img" src="images/project_pic1.png" alt="">
+                <div>
+                    <p class="proj_para__mini">My portfolio</p>
+                </div>
+                <div>
+                    <p class="proj_para">A personal portfolio designed and built to showcase my skills, projects, and
+                        design thinking.</p>
+                </div>
+                <div class="proj_skils">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="proj_box1">
+                <img class="proj_img" src="images/project_pic2.png" alt="">
+                <div>
+                    <p class="proj_para__mini">Travel Website</p>
+                </div>
+                <div>
+                    <p class="proj_para">A modern travel website concept designed to explore destinations and inspire
+                        users to plan trips.</p>
+                </div>
+                <div class="proj_skils">
+                    <p>UI/UX</p>
+                    <p>FIGMA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <div class="footer_section">
+            <div>
+                <p class="Copyright">Copyright &copy; 2025 Keerthi Portfolio</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav_links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+
+</body>
+
+</html>
