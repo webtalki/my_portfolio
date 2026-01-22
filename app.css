@@ -215,56 +215,98 @@ a {
 }
 
 
-.img_proj {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10%;
-    /* border: 2px solid red; */
-    align-items: center;
-
-
+/* Modern Project Section Styles */
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
 }
 
-.proj_box1 {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    width: 40%;
-    border-radius: 3%;
-    background-color: rgb(109, 148, 144);
-    /* border: 2px solid white; */
-    color: white;
-    padding: 4% 0;
+.project_card {
+    background: linear-gradient(145deg, #0a1428, #121d33);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(103, 151, 146, 0.3);
+}
+
+.project_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project_image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project_card:hover .project_image img {
+    transform: scale(1.05);
+}
+
+.project_overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(103, 151, 146, 0.8);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+}
+
+.project_type {
+    color: #020826;
+}
+
+.project_content {
+    padding: 1.5rem;
+}
+
+.project_title {
+    color: aquamarine;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
-.proj_img {
-    align-self: center;
-
+.project_description {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
 }
 
-.proj_para {
-    padding-left: 15%;
-
-}
-
-.proj_para__mini {
-    padding-left: 15%;
-    padding-top: 3%;
-}
-
-.proj_skils {
-    width: 30%;
+.project_tags {
     display: flex;
-    flex-direction: row;
-    padding-left: 15%;
-    padding-top: 3%;
-    font-size: 1.2em;
-    gap: 30%;
-
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
+
+.tag {
+    background: rgba(103, 151, 146, 0.15);
+    color: #67b792;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(103, 151, 146, 0.5);
+}
+
+
 
 .footer_section {
     text-align: center;
@@ -450,55 +492,37 @@ a {
     }
 }
 
-/* Responsive styles for Project Section */
+/* Responsive styles for Modern Project Section */
 @media screen and (max-width: 768px) {
-    .img_proj {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .projects_grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
     }
 
-    .proj_box1 {
-        width: 90%;
-        margin: 10px 0;
-        text-align: center;
+    .project_card {
+        margin: 0 10px;
     }
 
-    .proj_para,
-    .proj_para__mini {
-        padding-left: 0;
-        text-align: center;
-        color: whitesmoke;
+    .project_title {
+        font-size: 1.2rem;
     }
 
-    .proj_skils {
-        width: 50%;
-        padding-left: 0;
-        text-align: center;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 10%;
+    .project_description {
+        font-size: 0.9rem;
     }
+
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .img_proj {
-        flex-direction: row;
-        justify-content: space-evenly;
+    .projects_grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+        gap: 1.5rem;
     }
 
-    .proj_box1 {
-        width: 45%;
-    }
-
-    .proj_para,
-    .proj_para__mini {
-        padding-left: 10%;
-    }
-
-    .proj_skils {
-        width: 40%;
-        padding-left: 10%;
+    .project_title {
+        font-size: 1.3rem;
     }
 }
