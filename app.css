@@ -8,8 +8,8 @@
 
 .bdy {
     max-width: 100%;
-    margin-left: 25%;
-    margin-right: 25%;
+    /* margin-left: 25%;
+    margin-right: 25%; */
     /* border: 2px solid red; */
     background-color: #020826;
     color: white;
@@ -318,17 +318,17 @@ a {
         padding-left: 0;
     }
 
-    .bdy {
+    /* .bdy {
         margin-left: 5%;
         margin-right: 5%;
-    }
+    } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .bdy {
+    /* .bdy {
         margin-left: 10%;
         margin-right: 10%;
-    }
+    } */
 
     .nav_container {
         gap: 5%;
