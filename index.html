@@ -15,7 +15,7 @@
         <!-- navbar -->
         <div class="nav_container">
             <div>
-                <h1 class="logo_text">Keerthi_Portfolio</h1>
+                <h1 class="logo_text">Keerthi..Portfolio...</h1>
             </div>
             <div class="nav_links">
                 <ul>
@@ -62,7 +62,7 @@
                 </div>
                 <br>
                 <div class="btn_resume">
-                    <a href="assets/keerthi_res.pdf" download="keerthi_res.pdf"><button>Resume</button></a>
+                    <a href="assets/keerthi_res.pdf" download="keerthi_res.pdf"><button class="res_but">Resume</button></a>
                 </div>
 
             </div>
@@ -160,6 +160,14 @@
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a navigation link
+        const navLinksList = document.querySelectorAll('.nav_links a');
+        navLinksList.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
         });
 
     </script>
