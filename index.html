@@ -249,6 +249,30 @@
         </div>
         </div>
 
+        <!-- Contact section -->
+        <div class="contact_section">
+            <div class="contact_header">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out for collaborations or just to say hello!</p>
+            </div>
+            
+            <form class="contact_form" id="contactForm">
+                <div class="form_group">
+                    <input type="text" placeholder="Your Name" id="name" required>
+                </div>
+                
+                <div class="form_group">
+                    <input type="email" placeholder="Your Email" id="email" required>
+                </div>
+                
+                <div class="form_group">
+                    <textarea placeholder="Your Message" rows="5" id="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit_btn">Send Message</button>
+            </form>
+        </div>
+
         <!-- footer section -->
         <div class="footer_line">
             <div class="footer_identity">
@@ -261,9 +285,7 @@
                 <span>|</span>
                 <span>+91 6379422743</span>
                 <span>|</span>
-                <span>kumar_u1sakthi842@gmail.com</span>
-              
-                
+                <span>kumar_u1sakthi842@protonmail.com</span>
             </div>
             
             <div class="footer_end">
@@ -273,24 +295,12 @@
 
     </div>
 
+    <!-- Supabase CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav_links');
+<!-- Your external JS -->
+<script src="superbase.js"></script>
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a navigation link
-        const navLinksList = document.querySelectorAll('.nav_links a');
-        navLinksList.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-    </script>
 
 </body>
 
